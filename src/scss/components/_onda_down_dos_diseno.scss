@@ -1,0 +1,98 @@
+.onda_down_dos_diseno-container {
+  z-index: 998;
+
+  // @media screen and (min-width: 320px) {
+  //   transform: translateY(4rem);
+  // }
+
+  // @media screen and (min-width: 360px) {
+  //   transform: translateY(2rem);
+  // }
+
+
+
+  @media screen and (min-width: 30em) {
+    transform: translateY(-17rem);
+  }
+
+  @media (min-width: 800px) and (max-width: 1023px) {
+    margin-top: -6rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 620px) {
+    margin-top: -32em;
+  }
+
+  @media (min-width: 461px) and (max-width: 800px) {
+    margin-top: -28em;
+  }
+  // @media screen and (min-width: 380px) {
+  //   transform: translateY(-4rem);
+  // }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    background-image: url(/assets/img/wave-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  &-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgba(25, 102, 255, .6);
+    transform: translateY(3.5rem);
+
+    @media screen and (max-width: 540px) {
+      transform: translateY(7rem);
+    }
+  }
+
+  &-subtitle {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgba(25, 102, 255, .9);    
+    transform: translateY(2.5rem);
+
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+  }
+
+&-opacity {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(8rem);
+  width: 100%;
+  z-index: 997;
+}
+}
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .onda_down_dos_diseno-container {
+    transform: translateY(-11rem);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .onda_down_dos_diseno-container {
+    transform: translateY(15rem);
+  }
+}
+
+@media (min-width: 461px) and (max-width: 800px) {
+  .onda_down_dos_diseno-container {
+    transform: translateY(12rem);
+  }
+}

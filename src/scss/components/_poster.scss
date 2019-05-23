@@ -1,0 +1,101 @@
+.Poster {
+  width: 100%;
+  height: 620px;
+  position: relative;
+  overflow: hidden;
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+    //attachment: fixed;
+  }
+
+  &--opacity {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+    width: inherit;
+    height: 620px;
+    background-color: rgba(43, 134, 220, .5);
+  }
+
+  &-title {
+    // es de la que hizo mircha
+    // padding: 0 3vh;
+    // font-size: 5vw;
+    // text-align: center;
+    // letter-spacing: 2vw;
+    // color: #FFF;
+  }
+
+  &-group {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 5rem;
+  }
+
+  &-title {
+    padding: 0 3vh;
+    font-size: 5.5vh;
+    text-align: center;
+    letter-spacing: 1vw;
+    color: rgb(255, 255, 255);
+  }
+
+  &-subtitle {
+    display: block;
+    font-size: 3vh;
+    letter-spacing: .4vw;
+    padding-top: 1vh;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &-bottom {
+    position: relative;
+    padding: 0 3vh;
+    font-size: 4vh;
+    text-align: center;
+    top: .5rem;
+
+    &-movil {
+      position: relative;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #1966FF;
+      padding: 1rem;
+      border-radius: 50px;
+      color: #FFF;
+      left: -5px;
+
+      &:hover {
+        background-color: rgba(43, 134, 220, .8);
+        transition: .8s;
+      }
+    }
+
+    &-tablet {
+      position: relative;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #1966FF;
+      padding: 1rem;
+      border-radius: 50px;
+      color: #FFF;
+      left: 5px;
+
+      &:hover {
+        background-color: rgba(43, 134, 220, .8);
+        transition: .8s;
+      }
+    }
+
+    @media screen and (max-width: 440px) {
+      &-tablet {
+        display: none;
+      }
+    }
+  }
+}

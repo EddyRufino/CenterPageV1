@@ -1,0 +1,125 @@
+.container_textdos {
+  height: 640px;
+  background-color: #AFE7FE;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.diseno_textdos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  height: 500px;
+  padding-top: 12rem;
+  background-color: #AFE7FE;
+  
+
+  &-one {
+    line-height: 1.2rem;
+  }
+
+  &-two {
+    line-height: 1.2rem;
+  }
+
+  &-three {
+    line-height: 1.2rem;
+  }
+}
+
+.font {
+  font-family: sans-serif;
+  color: #5D5D5D;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .diseno_textdos {
+    padding-top: 25rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+  .diseno_textdos {
+    padding-top: 23rem;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 440px) {
+  .diseno_textdos {
+    padding-top: 20rem;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 454px) {
+  .diseno_textdos {
+    padding-top: 19rem;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 480px) {
+  .diseno_textdos {
+    padding-top: 17rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+  .diseno_textdos {
+    padding-top: 14rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .diseno_textdos {
+    width: 70%;
+  }
+}
+
+.btn {
+  z-index: 999;
+}
+
+
+@media (min-width: 320px) and (max-width: 454px) {
+  .container_textdos {
+    height: 740px;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 662px) {
+  .container_textdos {
+    height: 700px;
+  }
+}
+
+@media (min-width: 462px) and (max-width: 800px) {
+  .container_textdos {
+    height: 650px;
+  }
+}
+
+//Subir para que encaje con la onda
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .container_textdos {
+    margin-top: -9rem;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 800px) {
+  .container_textdos {
+    margin-top: 12rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .container_textdos {
+    margin-top: 15rem;
+  }
+}

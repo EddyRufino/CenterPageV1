@@ -1,0 +1,194 @@
+.calidad-servicio {
+  width: 100%;  
+  background-color: #AFE7FE;
+
+  @media screen and (max-width: 600px) {
+    height: 980px;
+  }
+
+  @media screen and (min-width: 599px) {
+    height: 650px;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    height: 900px;
+  } 
+
+  @media screen and (max-width:480px) {
+    margin-top: 4.5rem;
+  }
+
+//   @media screen and (min-width:480px) {
+//     margin-top: 0;
+//   }
+ }
+
+.calidad-servicio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  text-align: center;
+  top: 18rem;
+  max-width: 1200px;
+  margin: auto;
+
+  @media screen and (max-width: 37.4em) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    //top: 15rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    top: 14rem;
+  }
+
+  &-moderno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-calidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-atencion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.all {
+
+  &-img-servicio {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+  }
+
+  &-title-servicio {
+    color:#1966FF;
+    font-size: 1.5rem;
+    transform: translateY(-1rem);
+  }
+
+  &-decrip-servicio {
+    color: #3E3B3B;
+    display: block;
+    text-align: center;
+    width: 80%;
+    transform: translateY(-2.2rem);
+  }
+}
+
+.img-moderno-servicio {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: translateX(-2rem);
+    background-image: url(/assets/img/moderno.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-calidad-servicio {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: translateX(-2rem);
+    background-image: url(/assets/img/calidad.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-atencion-servicio {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  transform: translateX(-1.5rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url(/assets/img/atencion.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-two-servicio {
+  width: 90px;
+  height: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    text-align: center;
+    transform: translateX(-12rem);
+    background-image: url(/assets/img/two.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .calidad-servicio {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .calidad-servicio {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calidad-servicio {
+    margin-top: 1.5rem;
+  }
+}
+
+
+// Mover Iconos
+
+@media (min-width: 598px) and (max-width: 800px) {
+  .calidad-servicio-container {
+    padding-top: 3rem;
+  }
+}

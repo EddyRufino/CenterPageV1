@@ -1,0 +1,12 @@
+mixin poster(image, title, subtitle)
+  article.Poster.u-firstContent(style=`background-image: url(${image});`)
+    div.Poster--opacity
+      div.Poster-group
+        h1.Poster-title
+          span= title
+          br
+          span.Poster-subtitle.
+            !{subtitle}
+        section.Poster-bottom
+          a(href='/').Poster-bottom-movil Conoce más
+          a(href='/').Poster-bottom-tablet Hablemos

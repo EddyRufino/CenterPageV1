@@ -1,0 +1,18 @@
+mixin nosotros_text(image, text, imagetwo, texttwo)
+  article.nosotros
+    .nosotros_img.move
+      i.nosotros_imge(style=`background-image: url(${image});`)
+    .nosotros_text.move
+      p.font.nosotros_text_p= text
+        br
+        br
+        br
+        a(href="").btn Contactanos
+    .nosotros_texttwo.move
+      p.font.nosotros_text_p= texttwo
+        br
+        br
+        br
+        a(href="").btn Contactanos
+    .nosotros_imgtwo.move
+      i.nosotros_imge(style=`background-image: url(${imagetwo});`)

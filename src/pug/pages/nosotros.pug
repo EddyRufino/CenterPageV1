@@ -1,0 +1,34 @@
+extends ../config/template
+//- Includes...
+
+include ../components/poster.pug
+include ../components/onda.pug
+include ../components/nosotros_text.pug
+include ../components/onda_down_nosotros.pug
+include ../components/nosotros_textdos.pug
+
+append config
+  -pageTitle = 'App'
+  -pageDescription = 'Pagina inicial de CenterPage'
+
+block main
+    +poster('./assets/img/14472.jpg', 'DISEÑO Y DESARROLLO WEB', 'para tu página web hecha a la medida.')
+    +onda('NOSOTROS.', '')
+    +nosotros_text('./assets/img/js.svg', 'En CenterPage desarrollamos los proyectos con tecnología de primera para poder crear tu sitio web de acuerdo a la medida de tus necesidades.', './assets/img/laravel.svg', 'Trabajamos con lenguajes de programación que nos ayudan a desarrollar aplicaciones web robustas con eficiente tiempo de respuesta sin descuidar la seguridad del sitio web. Analizamos tus necesidades y los agrupamos en módulos para poder programarlos.')
+    +onda_down_nosotros('Lo que puedas imaginar.', 'NOSOTROS LO PODEMOS DISEÑAR.')
+    +text_nosotros('En CenterPage te ayudamos a llegar a muchos nuevos clientes con un sitio web atractivo, funcional, adaptado a tus requerimientos y a los nuevos estandares de internet.', 'Estamos totalmente enfocados en ayudarte a crecer como empresa o marca y que puedas aprovechar al máximo los beneficios que nos ofrece Internet. Todo esto a un precio competitivo y que sin importar el tamaño de tu negocio puedas disfrutar el tener un sitio web profesional y de calidad.')
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br

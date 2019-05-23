@@ -1,0 +1,78 @@
+/*
+  This boilerplate is based in ITCSS and SMACSS
+*/
+
+// Config
+@import "config/functions";
+@import "config/variables";
+@import "config/mixins";
+
+// Base and elements (generic)
+@import "base/base";
+
+// LAYOUT
+  // Escribe solo los estilos de layout (division en regiones del viewport)
+@import "layout/layout";
+
+// MODULOS (SMACSS) O COMPONENTES (ITCSS)
+  // Son los elementos de UI de tu interfaz, como botones, tablas, menus, etc.
+  // Crea los archivos adicionales que necesites (uno por componente)
+@import "components/information";
+@import "components/navigation_off_canvas";
+@import "components/poster";
+@import "components/onda";
+@import "components/text";
+@import "components/onda_down";
+@import "components/calidad";
+@import "components/onda_two";
+@import "components/pasos";
+@import "components/onda_down_two";
+@import "components/footer";
+@import "components/servicio";
+@import "components/onda_down_servicio";
+@import "components/calidad_servicio";
+@import "components/onda_two_servicio";
+@import "components/pasos_servicio";
+@import "components/onda_down_two_servicio";
+@import "components/servicio_diseno";
+@import "components/onda_down_diseno";
+@import "components/servicio_diseno_text";
+@import "components/onda_two_diseno";
+@import "components/pasos_diseno";
+@import "components/onda_down_two_diseno";
+@import "components/_servicio_diseno_textdos";
+@import "components/onda_down_dos_diseno";
+@import "components/servicio_calidad_diseno";
+@import "components/onda_down_footer_diseno.scss";
+@import "components/footer_diseno.scss";
+@import "components/servicio_app_text";
+@import "components/onda_down_app";
+@import "components/servicio_app_texto";
+@import "components/onda_down_two_app";
+@import "components/_servicio_app_textdos";
+@import "components/footer_app.scss";
+@import "components/onda_down_footer_app";
+@import "components/servicio_seo_text";
+@import "components/onda_down_seo";
+@import "components/servicio_seo_textdos";
+@import "components/onda_down_two_seo";
+@import "components/_servicio_seo_dostext.scss";
+@import "components/onda_down_footer_ser";
+@import "components/footer_Seo";
+@import "components/portafolio_text";
+@import "components/onda_down_portafolio";
+@import "components/portafolio_textdos";
+@import "components/onda_down_two_portafolio";
+@import "components/portafolio_dostext";
+@import "components/onda_footer_portafolio";
+@import "components/nosotros_text";
+@import "components/onda_down_nosotros";
+@import "components/nosotros_textdos";
+
+// Theme (colors and fonts)
+@import "theme/typography";
+
+// Utilities (hacks)
+  // Todos los hacks que hayas necesitado para solucionar conflictos
+  // o resolver situaciones extremas. Se espera poder mejorarlos luego.
+@import "hacks/hacks";

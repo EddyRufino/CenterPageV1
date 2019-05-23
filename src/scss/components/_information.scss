@@ -1,0 +1,41 @@
+$header-container-width: 1200px;
+$header-height: 2rem;
+
+.info {
+  position: fixed;
+  width: 100%;
+  height: $header-height;
+  background-color: #1966FF;
+  z-index: 999;
+}
+
+.info-content {
+  margin: auto;
+  max-width: $header-container-width;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #1966FF;
+  padding: 5px;
+  font: {
+    weight: bold;
+    size: 1rem;
+  }
+
+  &-left {
+    padding-left: 10px;
+
+    &-gmail {
+      color: #FFFFFF;
+      font-size: 1rem;
+    }
+  }
+
+  &-right {
+    padding-right: 10px;
+    
+    &-phone {
+      color: #FFFFFF;
+    }
+  }
+}

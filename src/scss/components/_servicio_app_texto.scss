@@ -1,0 +1,99 @@
+.container_app {
+  height: 640px;
+  background-color: #AFE7FE;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.app_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  height: 500px;
+  padding-top: 12rem;
+  background-color: #AFE7FE;
+  
+
+  &-one {
+    line-height: 1.2rem;
+  }
+
+  &-two {
+    line-height: 1.2rem;
+  }
+
+  &-three {
+    line-height: 1.2rem;
+  }
+}
+
+.font {
+  font-family: sans-serif;
+  color: #5D5D5D;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .app_text {
+    padding-top: 29rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 374px) {
+  .app_text {
+    padding-top: 27rem;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 440px) {
+  .app_text {
+    padding-top: 23rem;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 454px) {
+  .app_text {
+    padding-top: 22rem;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 480px) {
+  .app_text {
+    padding-top: 20rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+  .app_text {
+    padding-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .app_text {
+    width: 70%;
+  }
+}
+
+.btn {
+  z-index: 999;
+}
+
+
+@media (min-width: 320px) and (max-width: 454px) {
+  .container_app {
+    height: 850px;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 650px) {
+  .container_app {
+    height: 750px;
+  }
+}

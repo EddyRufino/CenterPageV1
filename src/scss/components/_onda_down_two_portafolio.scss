@@ -1,0 +1,99 @@
+.onda_down_two_portafolio-container {
+  transform: translateY(-3rem);
+  z-index: 998;
+
+  // @media screen and (min-width: 320px) {
+  //   transform: translateY(4rem);
+  // }
+
+  // @media screen and (min-width: 360px) {
+  //   transform: translateY(2rem);
+  // }
+
+  // @media screen and (min-width: 30em) {
+  //   transform: translateY(-2rem);
+  // }
+
+  // @media screen and (min-width: 380px) {
+  //   transform: translateY(-4rem);
+  // }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 285px;
+    background-image: url(/assets/img/wave-bottom.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // @media (min-width: 800px) and (max-width: 1024px) {
+    //   transform: translateY();
+    // }
+  }
+
+  &-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgba(25, 102, 255, .6);
+    transform: translateY(4rem);
+  }
+
+  &-subtitle {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgba(25, 102, 255, .9);
+    transform: translateY(3.5rem);
+  }
+
+&-opacity {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(8rem);
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 900px) {
+  .onda_down_two_portafolio-container {
+    transform: translateY(-17rem);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .onda_down_two_portafolio-container {
+    transform: translateY(-16rem);
+  }
+}
+
+@media (min-width: 480px) and (max-width: 900px) {
+  .onda_down_two_portafolio-container {
+    transform: translateY(-16rem);
+  }
+}
+
+// @media (min-width: 800px) and (max-width: 1023px) {
+//   .onda_down_two_app-container {
+//     transform: translateY(-10rem);
+//   }
+// }
+
+// @media (min-width: 540px) and (max-width: 800px) {
+//   .onda_down_two_app-container {
+//     transform: translateY(10rem);
+//   }
+// }
+
+// @media (min-width: 320px) and (max-width: 540px) {
+//   .onda_down_two_app-container {
+//     transform: translateY(14rem);
+//   }
+// }

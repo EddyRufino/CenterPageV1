@@ -1,0 +1,234 @@
+$header-bg-op-0: rgba(43, 134, 220, 0.4); //#E45090
+$header-bg-op-1: rgba(43, 134, 220, .95);
+$header-color: #FFF;
+$header-height: 4rem;
+$header-container-width: 1200px;
+
+
+// Para cuando quieras poner un logo
+//$logo-url: './img/marathons-logo.svg';
+$logo-width: 4rem;
+$logo-height: 2rem;
+$logo-bg-size: 3.5rem;
+
+$header-area: 'hamburger . logo'; // 'logo . hamburger' | '. logo hamburger' | 'hamburger . logo' | 'hamburger logo .'
+$logo-position: center; //start | center | end
+$hamburger-position: start; //start | end
+
+$hamburger-color: rgb(255, 255, 255);
+
+// Para donde quieres poner el menu en movil
+@mixin panel-direction($dir) {
+  @if $dir == left {
+    transform: translateX(-100%);
+    &.is-active { transform: translateX(0); }
+  } @else if $dir == right {
+    transform: translateX(100%);
+    &.is-active { transform: translateX(0); }
+  } @else if $dir == top {
+    transform: translateY(-100%);
+    &.is-active { transform: translateY(0); }
+  } @else if $dir == bottom {
+    transform: translateY(100%);
+    &.is-active { transform: translateY(0); }
+  }
+}
+
+.hamburger:focus {
+  outline: 0;
+  border: 0;
+}
+
+// Para que el texto o lo que sigue despues del fixed no se sobreponga
+//.u-afterFixed { padding-top: $header-height; }
+
+.Header {
+  position: fixed;
+  z-index: 998;
+  width: 100%;
+  height: $header-height;
+  transition: all .3s ease-out;
+  background-color: $header-bg-op-0;
+  border-bottom: medium solid rgba(43, 134, 220, 0.4);
+  top: 2rem;
+  //transform: translateY(2rem); // Lo puse para bajarlo porque quedaba sobrepuesto con el information
+
+  &.is-active { background-color: $header-bg-op-1; }
+
+  &-container {
+    margin: auto;
+    max-width: $header-container-width;
+    display: flex;
+    justify-content: space-between;
+    //flex-direction: row-reverse;
+    // grid-template: {
+    //   columns: repeat(3, 1fr);
+    //   rows: $header-height, auto;
+    //   areas: $header-area
+    //          'panel panel panel';
+    // }
+  }
+}
+
+.Logo {
+   z-index: 999;
+  // grid-area: logo;
+  // justify-self: $logo-position;
+  display: flex;
+  margin-top: 0;
+
+  &-link {
+    display: block;
+    //width: $logo-width;
+    height: 43px; // antes iba una variable $logoheight pero le cambie para que baje el border-bottom
+    //width: 35px;
+    color:  rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem;
+    //border-bottom: 2px solid #1966FF;
+    // text-indent: -9999px;
+    // background: {
+    //   image: url($logo-url);
+    //   size: $logo-bg-size;
+    //   repeat: no-repeat;
+    //   position: center;
+    // }
+
+    // Lo puse para que cuando sea esa medida el nombre "CenterPage" no se mueva a la right
+  //   @media screen and (max-width: 480px) {
+  //     padding-right: 15px;
+  //  }
+
+  }
+}
+
+// Para poner la linea en el nombre
+// .after::after {
+//   content: '';
+//   display: block;
+//   position: absolute;
+//   width: 70px;
+//   height: 4px;
+//   background-color: #1966FF;
+// }
+
+.Panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow-y: auto;
+  grid-area: panel;
+  background-color: $header-bg-op-1;
+  transition: transform .3s ease-out;
+  @include panel-direction(left);
+
+  &-button {
+    z-index: 999;
+    grid-area: hamburger;
+    justify-self: $hamburger-position;
+  }
+}
+
+.Menu {
+  margin-top: calc( #{$header-height} + 2rem );
+
+   &-listItem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  &-link {
+    display: block;
+    padding: 1rem;
+    font: {
+      weight: bold;
+      size: 1.5rem;
+    }
+    color: $hamburger-color;
+    text-decoration: none;
+    transition: all .2s ease-out;
+  }
+
+  &-link:hover {
+    color: $header-color;
+    background-color: black;
+    opacity: .2;
+    transition: 2s;
+  }
+}
+
+
+// Para que no se ponga del otro lado 'CenterPage'
+// @media screen and (max-width: 64em) {
+//   .Header {
+//     &-container {
+//       justify-content: space-between;
+//       flex-direction: row-reverse;
+//     }
+//   }
+// }
+
+@media screen and (min-width: 64em) {
+  .Header {
+    &-container {
+      justify-content: space-between;      
+      grid-template: {
+        columns: auto 1fr;
+        rows: $header-height;
+        areas: 'logo panel'; // Para mover de lado el logo y el nav 'panel logo' 
+      }
+    }
+  }
+
+  .Logo { justify-self: start; }
+
+  .Panel {
+    position: static;
+    overflow-y: visible;
+    transform: translate(0, 0);
+    background-color: transparent;
+
+    &-button { display: none; }
+  }
+
+  .Menu {
+    margin-top: 0;
+    transform: translateY(-25%);
+
+    &-listItem {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &-item {
+      //transform: translateX(-50%);  
+    }
+
+    &-link { 
+      border-top: medium solid transparent; 
+    }
+
+    &-link:hover {
+      border-bottom: medium solid #1966FF;
+      background-color: transparent;
+    }
+  }
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: #FFF !important;
+}
+
+.after {
+  &:hover {
+    font-size: 2rem;
+    transition: .8s;
+  }
+}

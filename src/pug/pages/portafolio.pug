@@ -1,0 +1,27 @@
+extends ../config/template
+//- Includes...
+
+include ../components/poster.pug
+include ../components/onda.pug
+include ../components/portafolio_text.pug
+include ../components/onda_down_portafolio.pug
+include ../components/portafolio_textdos.pug
+include ../components/onda_down_two_portafolio.pug
+include ../components/portafolio_dostext.pug
+include ../components/onda_footer_portafolio.pug
+include ../components/footer_portafolio.pug
+
+append config
+  -pageTitle = 'Portafolio'
+  -pageDescription = 'Pagina inicial de CenterPage'
+
+block main
+    +poster('./assets/img/14472.jpg', 'DISEÑO Y DESARROLLO WEB', 'para tu página web hecha a la medida.')
+    +onda('PORTAFOLIO.', '')
+    +portafolio_text('Estamos trabajando para ti.')
+    +onda_down_portafolio('¿POR QUÉ PONER TU EMPRESA EN NUSTRAS MANOS? ', '')
+    +portafolio_textdos('Somos especialistas en el diseño y desarrollo web por eso no solo pensamos en diseñar tu sitio web de acuerdo a un patrón estético también te ayudamos para que la experiencia del usuario sea la más amigable posible.', 'No es suficiente subir un sitio web para que los clientes potenciales lleguen, esto va más allá y se necesita de una estrategia de posicionamiento buena para que tu sitio web aparezca en los primeros puestos de búsqueda.', 'En CenterPage te ofrecemos nuestra experiencia y buenas practicas para lograr que tu sitio web sea un éxito en internet.')
+    +onda_down_two_portafolio('¿Aún tienes dudas?', 'Estamos a tu servicio.')
+    +portafolio_dostext('Si estas interesado en conocer como tu empresa o marca personal puede llegar hacer conocida más rápido que las demás, nosotros te ayudamos a posicionar tu sitio web en los mejores lugares que tienen los principales motores de búsqueda.')
+    +onda_down_footer_portafolio('', '')
+    +footer_portafolio()

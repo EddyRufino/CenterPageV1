@@ -1,0 +1,221 @@
+.calidad-servicio_diseno {
+  width: 100%;
+
+  // @media screen and (max-width: 600px) {
+  //   height: 980px;
+  // }
+
+  @media (min-width: 599px) and (max-width: 800px) {
+    height: 250px;
+  }
+
+  @media (min-width: 800px) and (max-width: 800px) {
+    height: 350px;
+  }
+
+  @media (min-width: 800px) and (max-width: 1024px) {
+    height: 380px;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    height: 500px;
+  } 
+
+  // @media screen and (max-width:480px) {
+  //   margin-top: 4.5rem;
+  // }
+
+//   @media screen and (min-width:480px) {
+//     margin-top: 0;
+//   }
+ }
+
+.calidad-servicio_diseno-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  text-align: center;
+  top: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 995;
+
+  @media screen and (max-width: 37.4em) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    //top: 15rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    top: 14rem;
+  }
+
+  &-moderno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-calidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-atencion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.all {
+  
+
+  &-img-servicio {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+  }
+
+  &-title-servicio {
+    color:#1966FF;
+    font-size: 1.5rem;
+    transform: translateY(-1rem);
+  }
+
+  &-decrip-servicio {
+    color: #3E3B3B;
+    display: block;
+    text-align: center;
+    width: 80%;
+    transform: translateY(-2.2rem);
+  }
+}
+
+.img-moderno-servicio_diseno {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: translateX(-2rem);
+    background-image: url(/assets/img/moderno.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-calidad-servicio_diseno {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transform: translateX(-2rem);
+    background-image: url(/assets/img/calidad.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-atencion-servicio_diseno {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  transform: translateX(-1.5rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url(/assets/img/atencion.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.img-two-servicio_diseno {
+  width: 90px;
+  height: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    text-align: center;
+    transform: translateX(-12rem);
+    background-image: url(/assets/img/two.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .calidad-servicio_diseno {
+    margin-top: 16rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .calidad-servicio_diseno {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 460px) {
+  .calidad-servicio_diseno {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 598px) {
+  .calidad-servicio_diseno {
+    margin-top: 19rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .calidad-servicio_diseno {
+    margin-top: 1.5rem;
+  }
+}
+
+
+// Mover Iconos
+
+@media (min-width: 598px) and (max-width: 800px) {
+  .calidad-servicio_diseno-container {
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 800px) {
+  .calidad-servicio_diseno-container {
+    padding-top: 10rem;
+  }
+}
