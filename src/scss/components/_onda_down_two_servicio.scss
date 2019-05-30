@@ -28,35 +28,20 @@
     background-image: url(/assets/img/wave-bottom.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     transform: rotate(180deg);
   }
 
   &-title {
-    display: block;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: rgba(25, 102, 255, .6);
     transform: translateY(3.5rem);
   }
 
   &-subtitle {
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: rgba(25, 102, 255, .9);    
     transform: translateY(2.5rem);
   }
 
 &-opacity {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
   transform: translateY(8rem);
-  width: 100%;
   z-index: 997;
 }
 }

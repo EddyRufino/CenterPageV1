@@ -19,70 +19,9 @@
   
 
   &-one {
-    line-height: 1.2rem;
+    line-height: 1.6rem;
   }
 }
-
-.font {
-  font-family: sans-serif;
-  color: #5D5D5D;
-}
-
-
-
-// @media (min-width: 320px) and (max-width: 388px) {
-//   .seo_dostext {
-//     padding-top: 9rem;
-//   }
-// }
-
-// @media (min-width: 388px) and (max-width: 570px) {
-//   .seo_dostext {
-//     padding-top: 6rem;
-//   }
-// }
-
-// @media (min-width: 664px) and (max-width: 841px) {
-//   .seo_dostext {
-//     padding-top: 3rem;
-//   }
-// } sdfsdfsdf
-
-// @media (min-width: 380px) and (max-width: 436px) {
-//   .app_textdos {
-//     padding-top: 4rem;
-//   }
-// }
-
-// @media (min-width: 360px) and (max-width: 374px) {
-//   .app_textdos {
-//     padding-top: 23rem;
-//   }
-// }
-
-// @media (min-width: 374px) and (max-width: 440px) {
-//   .app_textdos {
-//     padding-top: 20rem;
-//   }
-// }
-
-// @media (min-width: 440px) and (max-width: 454px) {
-//   .app_textdos {
-//     padding-top: 19rem;
-//   }
-// }
-
-// @media (min-width: 454px) and (max-width: 480px) {
-//   .app_textdos {
-//     padding-top: 17rem;
-//   }
-// }
-
-// @media (min-width: 480px) and (max-width: 640px) {
-//   .app_textdos {
-//     padding-top: 14rem;
-//   }
-// }
 
 @media screen and (min-width: 1200px) {
   .seo_dostext {
@@ -95,15 +34,15 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 331px) {
+@media (min-width: 320px) and (max-width: 338px) {
   .container_dostext_seo {
-    height: .1px;
+    height: 5px;
   }
 }
 
-@media (min-width: 331px) and (max-width: 800px) {
+@media (min-width: 339px) and (max-width: 800px) {
   .container_dostext_seo {
-    height: .5px;
+    height: .1px;
   }
 }
 
@@ -112,6 +51,18 @@
     height: 280px;
   }
 }
+
+@media (min-width: 800px) and (max-width: 800px) {
+  .container_dostext_seo {
+    height: 10px;
+  }
+}
+
+// @media (min-width: 801px) and (max-width: 801px) {
+//   .container_dostext_seo {
+//     height: 11px;
+//   }
+// }
 
 // @media (min-width: 454px) and (max-width: 662px) {
 //   .container_textdos_app {

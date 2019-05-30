@@ -1,27 +1,23 @@
 .calidad-servicio {
   width: 100%;  
-  background-color: #AFE7FE;
+  background-color: var(--bg-fondo-two);
 
-  @media screen and (max-width: 600px) {
-    height: 980px;
+  @media (min-width: 320px) and (max-width: 599px) {
+    height: 960px;
   }
 
-  @media screen and (min-width: 599px) {
-    height: 650px;
+  @media (min-width: 599px) and (max-width: 1023px) {
+    height: 750px;
   }
 
 
   @media screen and (min-width: 1024px) {
-    height: 900px;
+    height: 1050px;
   } 
 
   @media screen and (max-width:480px) {
     margin-top: 4.5rem;
   }
-
-//   @media screen and (min-width:480px) {
-//     margin-top: 0;
-//   }
  }
 
 .calidad-servicio-container {
@@ -33,7 +29,7 @@
   justify-items: center;
   position: relative;
   text-align: center;
-  top: 18rem;
+  //top: 18rem;
   max-width: 1200px;
   margin: auto;
 
@@ -43,9 +39,30 @@
     //top: 15rem;
   }
 
-  @media screen and (max-width: 800px) {
+  @media (min-width: 320px) and (max-width: 480px) {
     top: 14rem;
   }
+
+  @media (min-width: 480px) and (max-width: 597px) {
+    top: 16rem;
+  }
+
+  @media (min-width: 598px) and (max-width: 598px) {
+    top: 12rem;
+  }
+
+  @media (min-width: 599px) and (max-width: 619px) {
+    top: 17rem;
+  }
+
+  @media (min-width: 620px) and (max-width: 800px) {
+    top: 20rem;
+  }
+
+  @media (min-width: 801px) {
+    top: 22rem;
+  }
+
 
   &-moderno {
     display: flex;
@@ -77,14 +94,16 @@
   }
 
   &-title-servicio {
-    color:#1966FF;
+    color: var(--bg-btn);
     font-size: 1.5rem;
     transform: translateY(-1rem);
   }
 
   &-decrip-servicio {
-    color: #3E3B3B;
+    color: var(--bg-color-parrafo);
     display: block;
+    font-size: var(--font-size-parrafo);
+    font-family: var(--font-family);
     text-align: center;
     width: 80%;
     transform: translateY(-2.2rem);
@@ -166,15 +185,9 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .calidad-servicio {
-    margin-top: 4rem;
-  }
-}
-
-@media (min-width: 800px) and (max-width: 1023px) {
-  .calidad-servicio {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 }
 

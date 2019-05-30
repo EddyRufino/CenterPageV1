@@ -1,10 +1,8 @@
-mixin servicio_seo(text, text2)
+mixin servicio_seo(images, text, text2)
   article.text_seo
     div.text_seo-img
-      span.text_seo-img-svg
-    span.text_seo-parrafo.font= text
-      br
-      span.text_seo-parrafo-two.font= text2
-      br
+      i.text_seo-img-i(style=`background-image: url(${images});`)
+    span.text_seo-parrafo.texto= text
+      span.text_seo-parrafo-two.texto= text2
       br
       a(href="").btn Contactanos

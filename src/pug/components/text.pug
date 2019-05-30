@@ -1,11 +1,8 @@
-mixin text(text, text2)
+mixin text(image, text, text2)
   article.text
     div.text-img
-      span.text-img-svg
-    span.text-parrafo= text
-      br
-      br
-      span.text-parrafo-two= text2
-      br
+      i.text-img-i(style=`background-image: url(${image});`)
+    span.text-parrafo.texto= text
+      span.text-parrafo-two.texto= text2
       br
       a(href="").btn Contactanos

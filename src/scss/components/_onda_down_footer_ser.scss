@@ -28,38 +28,10 @@
     background-image: url(/assets/img/wave-bottom.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     transform: rotate(180deg);
     z-index: 992;
   }
-
-  &-title {
-    display: block;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: rgba(25, 102, 255, .6);
-    transform: translateY(3.5rem);
-  }
-
-  &-subtitle {
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: rgba(25, 102, 255, .9);    
-    transform: translateY(2.5rem);
-  }
-
-&-opacity {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
-  transform: translateY(8rem);
-  width: 100%;
-  z-index: 997;
-}
 }
 
 @media (min-width: 801px) and (max-width: 1023px) {
@@ -77,5 +49,23 @@
 @media (min-width: 461px) and (max-width: 800px) {
   .onda_down_footer_seo-container {
     transform: translateY(8rem);
+  }
+}
+
+@media (min-width: 394px) and (max-width: 460px) {
+  .onda_down_footer_seo-container {
+    transform: translateY(9rem);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 801px) {
+  .onda_down_footer_seo-container {
+    transform: translateY(6rem);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 801px) {
+  .onda_down_footer_seo-container {
+    transform: translateY(-12rem);
   }
 }

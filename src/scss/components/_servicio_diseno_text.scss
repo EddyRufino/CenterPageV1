@@ -1,6 +1,6 @@
 .container {
   height: 640px;
-  background-color: #AFE7FE;
+  background-color: var(--bg-fondo-two);
   display: grid;
   grid-template-columns: 100%;
   justify-content: center;
@@ -16,7 +16,7 @@
   width: 90%;
   height: 500px;
   padding-top: 10rem;
-  background-color: #AFE7FE;
+  background-color: var(--bg-fondo-two);
   
 
   &-one {
@@ -32,46 +32,39 @@
   }
 }
 
-.font {
-  font-family: sans-serif;
-  color: #5D5D5D;
+@media (min-width: 320px) and (max-width: 374px) {
+  .diseno_text {
+    padding-top: 28rem;
+  }
 }
 
-
-
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 374px) and (max-width: 454px) {
   .diseno_text {
     padding-top: 25rem;
   }
 }
 
-@media (min-width: 360px) and (max-width: 374px) {
+@media (min-width: 454px) and (max-width: 531px) {
   .diseno_text {
-    padding-top: 23rem;
+    padding-top: 22rem;
   }
 }
 
-@media (min-width: 374px) and (max-width: 440px) {
+@media (min-width: 531px) and (max-width: 638px) {
+  .diseno_text {
+    padding-top: 22rem;
+  }
+}
+
+@media (min-width: 638px) and (max-width: 880px) {
   .diseno_text {
     padding-top: 20rem;
   }
 }
 
-@media (min-width: 440px) and (max-width: 454px) {
-  .diseno_text {
-    padding-top: 19rem;
-  }
-}
-
-@media (min-width: 454px) and (max-width: 480px) {
+@media (min-width: 880px) {
   .diseno_text {
     padding-top: 17rem;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 640px) {
-  .diseno_text {
-    padding-top: 14rem;
   }
 }
 
@@ -86,20 +79,50 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 454px) {
+@media (min-width: 320px) and (max-width: 370px) {
+  .container {
+    height: 900px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 545px) {
+  .container {
+    height: 880px;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 599px) {
   .container {
     height: 800px;
   }
 }
 
-@media (min-width: 454px) and (max-width: 650px) {
+@media (min-width: 599px) and (max-width:800px) {
   .container {
-    height: 700px;
+    height: 730px;
   }
 }
 
-// @media (min-width: 454px) and (max-width: 480px) {
-//   .container {
-//     height: 720px;
-//   }
-// }
+@media (min-width: 801px) and (max-width: 879px) {
+  .container {
+    height: 730px;
+  }
+}
+
+@media (min-width: 879px) and (max-width: 900px) {
+  .container {
+    height: 710px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1023px) {
+  .container {
+    height: 680px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: 710px;
+  }
+}

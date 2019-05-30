@@ -5,7 +5,6 @@
   justify-content: center;
   grid-column-gap: 1rem;
   max-width: 1200px;
-  //text-align: center;
   line-height: 1.4rem;
   margin: auto;
   top: 4rem;
@@ -14,7 +13,7 @@
   @media (min-width: 320px) and (max-width: 1023px) {
     grid-template-columns: repeat(1, 310px);
     grid-template-rows: repeat(3, 310px);
-    grid-row-gap: 8rem;
+    grid-row-gap: 10rem;
   }
 
   &-diseno {
@@ -40,14 +39,14 @@
 .todo {
   display: block;
   position: relative;
-  //transform: translateX(50%);
   width: 310px;
   height: 210px;
 }
 
 .titulo {
-  color: #1966FF;
-  font-size: 1.2rem;
+  text-align: center;
+  color: var(--bg-btn);
+  font-size: var(--font-size-title);
   font-weight: 600;
   position: relative;
   top: 1rem;
@@ -57,18 +56,13 @@
   text-align: center;
   position: relative;
   width: 80%;
-  top: 1.3rem;
+  top: 1.5rem;
+  font-family: var(--font-family);
 }
 
 .btnn {
   position: relative;
-  top: 1.8rem;
-  text-decoration: none;
-  padding: .5rem 1rem;
-  background-color: #1966FF;
-  color: aliceblue;
-  font-weight: 580;
-  border-radius: 15px;
+  top: 3rem;
 }
 
 .flex {
@@ -78,10 +72,9 @@
 }
 
 .opacity-servicio {
-  //width: 80%;
-  height: 410px;
+  height: 450px;
   border-radius: 3px;
-  background-color: #D8F4FF;
+  background-color: var(--bg-fondo-two);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
@@ -92,14 +85,26 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 3px;
-  //clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 
-@media (min-width: 320px) and (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 641px) {
   .servicio {
     position: relative;
-    top: 0;
+    top: 2rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 800px) {
+  .servicio {
+    position: relative;
+    top: 3rem;
+  }
+}
+
+@media (min-width: 598px) and (max-width: 800px) {
+  .servicio {
+    //height: 1400px;
   }
 }

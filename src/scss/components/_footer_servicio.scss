@@ -3,30 +3,26 @@
   height: 500px;
   background-color: var(--bg-fondo-two);
 
-  @media (min-width: 480px) and (max-width: 800px) { 
-    height: 630px; 
-  }
+  @media (min-width: 480px) and (max-width: 800px) { height: 575px; }
 
-  @media (min-width: 320px) and (max-width: 479px) { 
-    height: 945px; 
-  }
-}
-
-@media (min-width: 801px) and (max-width: 1023px) {
-  .footer {
-    margin-top: -10rem;
-  }
+  @media (min-width: 320px) and (max-width: 479px) { height: 945px; }
 }
 
 @media (min-width: 320px) and (max-width: 460px) {
-  .footer {
+  .footer_servicio {
     margin-top: 18rem;
   }
 }
 
 @media (min-width: 461px) and (max-width: 800px) {
-  .footer {
+  .footer_servicio {
     margin-top: 18rem;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1023px) {
+  .footer_servicio {
+    margin-top: -10rem;
   }
 }
 

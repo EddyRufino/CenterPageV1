@@ -1,13 +1,29 @@
 // Typography
 $font-family: 'sans-serif';
-
 :root {
   --font-family: sans-serif;
 }
 
+/** Colores **/
 :root {
   --bg-primary: rgba(43, 134, 220, .5);
+  --bg-title: rgba(25, 102, 255, .6);
+  --bg-subtitle: rgba(25, 102, 255, .9); 
   --bg-btn: #1966FF;
+  --bg-cine: #004a8c;
+  --bg-btn-letra: #ffffff;
+  --bg-fondo-one: #ffffff;
+  --bg-fondo-two :#afe7fe;
+  --bg-color-parrafo: #3E3B3B;
+}
+
+/** Size letras **/
+:root {
+  --font-size-title: 1.5rem;
+  --font-size-subtitle: 2rem;
+  --font-size-parrafo: 1rem;
+  --font-size-btn: 1.2rem;
+  --line-height: 1.6rem;
 }
 
 /* ********** Variables ********** */

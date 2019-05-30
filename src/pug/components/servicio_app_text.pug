@@ -1,10 +1,8 @@
-mixin servicio_app(text, text2)
+mixin servicio_app(images, text, text2)
   article.text_app
     div.text_app-img
-      span.text_app-img-svg
-    span.text_app-parrafo.font= text
-      br
-      span.text_app-parrafo-two.font= text2
-      br
+      i.text_app-img-i(style=`background-image: url(${images});`)
+    span.text_app-parrafo.texto= text
+      span.text_app-parrafo-two.texto= text2
       br
       a(href="").btn Contactanos

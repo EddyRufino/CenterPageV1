@@ -10,12 +10,29 @@
     //attachment: fixed;
   }
 
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //    //para que se baje usa el resposive y ponle más px al boton
+  //   //top: 21.5rem;
+  //   //padding-bottom: 2rem;
+  //   width: 100%;
+  //   height: 285px;
+  //   background-image: url(/assets/img/wave-bottom.svg);
+  //   background-size: cover;
+  //   background-repeat: no-repeat;    
+  // }
+
+  @media (min-width: 320px) and (max-width: 800px) {
+    height: 550px;
+  }
+
   &--opacity {
     display: flex;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    
     width: inherit;
     height: 620px;
     background-color: rgba(43, 134, 220, .5);
@@ -99,3 +116,53 @@
     }
   }
 }
+
+// .onda {
+//   height: 1px;
+//     &::before {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//      //para que se baje usa el resposive y ponle más px al boton
+//     //top: 21.5rem;
+//     //padding-bottom: 2rem;
+//     width: 100%;
+//     height: 285px;
+//     background-image: url(/assets/img/wave-bottom.svg);
+//     background-size: cover;
+//     background-repeat: no-repeat;    
+//   }
+// }
+
+// .imag {
+//   display: block;
+//   position: relative;
+//   width: 100%;
+//   height: 150px;
+//   transform: translateY(-10rem);
+//   background: {
+//     position: center;
+//     repeat: no-repeat;
+//     size: cover;
+//     //attachment: fixed;
+//   }
+// }
+
+// @media (min-width: 320px) {
+//   .Poster {
+//     &::before {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//      //para que se baje usa el resposive y ponle más px al boton
+//     top: 21.5rem;
+//     //padding-bottom: 2rem;
+//     width: 100%;
+//     height: 285px;
+//     background-image: url(/assets/img/wave-bottom.svg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
+//   }
+// }

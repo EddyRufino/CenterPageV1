@@ -1,10 +1,8 @@
-mixin servicio_diseno(text, text2)
+mixin servicio_diseno(images, text, text2)
   article.text_diseno
     div.text_diseno-img
-      span.text_diseno-img-svg
-    span.text_diseno-parrafo.font= text
-      br
-      span.text_diseno-parrafo-two.font= text2
-      br
+      i.text_diseno-img-i(style=`background-image: url(${images});`)
+    span.text_diseno-parrafo.texto= text
+      span.text_diseno-parrafo-two.texto= text2
       br
       a(href="").btn Contactanos
