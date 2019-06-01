@@ -1,4 +1,4 @@
-.onda_down_two_seo-container {
+.onda_down_two_nosotros-container {
   transform: translateY(-3rem);
   z-index: 998;
 
@@ -48,19 +48,19 @@
 }
 
 @media screen and (min-width: 900px) {
-  .onda_down_two_seo-container {
+  .onda_down_two_nosotros-container {
     transform: translateY(-17rem);
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .onda_down_two_seo-container {
+  .onda_down_two_nosotros-container {
     transform: translateY(-16rem);
   }
 }
 
 @media (min-width: 480px) and (max-width: 900px) {
-  .onda_down_two_seo-container {
+  .onda_down_two_nosotros-container {
     transform: translateY(-16rem);
   }
 }

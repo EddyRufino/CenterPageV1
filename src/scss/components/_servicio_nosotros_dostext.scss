@@ -1,0 +1,70 @@
+.container_dostext_nosotros {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.nosotros_dostext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  top: 1.5rem;
+  //padding-bottom: 18rem;
+  
+
+  &-one {
+    line-height: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nosotros_dostext {
+    width: 70%;
+  }
+}
+
+.btn {
+  z-index: 992;
+}
+
+
+@media (min-width: 320px) and (max-width: 338px) {
+  .container_dostext_nosotros
+ {
+    height: 5px;
+  }
+}
+
+@media (min-width: 339px) and (max-width: 800px) {
+  .container_dostext_nosotros
+ {
+    height: .1px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .container_dostext_nosotros
+ {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .container_dostext_nosotros
+ {
+    height: 100px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 800px) {
+  .container_dostext_nosotros
+ {
+    height: 10px;
+  }
+}

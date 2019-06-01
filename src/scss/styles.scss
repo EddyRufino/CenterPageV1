@@ -59,16 +59,21 @@
 @import "components/onda_down_two_seo";
 @import "components/_servicio_seo_dostext.scss";
 @import "components/onda_down_footer_ser";
-// @import "components/footer_Seo";
-// @import "components/portafolio_text";
-// @import "components/onda_down_portafolio";
-// @import "components/portafolio_textdos";
-// @import "components/onda_down_two_portafolio";
-// @import "components/portafolio_dostext";
-// @import "components/onda_footer_portafolio";
-// @import "components/nosotros_text";
-// @import "components/onda_down_nosotros";
-// @import "components/nosotros_textdos";
+@import "components/footer_Seo";
+@import "components/portafolio_text";
+@import "components/onda_down_portafolio";
+@import "components/portafolio_textdos";
+@import "components/onda_down_two_portafolio";
+@import "components/portafolio_dostext";
+@import "components/onda_footer_portafolio";
+@import "components/footer_portafolio";
+@import "components/nosotros_text";
+@import "components/onda_down_nosotros";
+@import "components/nosotros_textdos";
+@import "components/onda_down_two_nosotros";
+@import "components/servicio_nosotros_dostext";
+@import "components/onda_down_footer_nosotros";
+@import "components/form";
 
 // Theme (colors and fonts)
 @import "theme/typography";

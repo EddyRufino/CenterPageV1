@@ -1,0 +1,30 @@
+extends ../config/template
+//- Includes...
+
+include ../components/poster.pug
+include ../components/onda.pug
+include ../components/contact.pug
+
+append config
+  -pageTitle = 'App'
+  -pageDescription = 'Pagina inicial de CenterPage'
+
+block main
+    +poster('./assets/img/14472.jpg', 'DISEÑO Y DESARROLLO WEB', 'para tu página web hecha a la medida.')
+    +onda('CONTACTO', '')
+    +contact('./assets/img/contact.svg')
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br

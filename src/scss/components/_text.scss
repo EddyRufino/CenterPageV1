@@ -15,11 +15,15 @@
     position: relative;
   }
 
-  @media (min-width: 640px) and (max-width: 1023px) {
+  @media (min-width: 640px) and (max-width: 1022px) {
     padding-top: 2rem;
   }
 
-  @media screen and (min-width: 1023px) {
+  @media (min-width: 1023px) and (max-width: 1023px) {
+    padding-top: 0rem;
+  }
+
+  @media screen and (min-width: 1024px) {
     top: 3rem;
   }
 
@@ -92,6 +96,7 @@
   &:hover {
     background-color: tomato;
     transition: .5s;
+    cursor: pointer;
   }
 }
 

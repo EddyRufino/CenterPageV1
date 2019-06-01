@@ -35,32 +35,16 @@
   }
 
   &-title {
-    display: block;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: rgba(25, 102, 255, .6);
     transform: translateY(4rem);
   }
 
   &-subtitle {
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: rgba(25, 102, 255, .9);
     transform: translateY(3.5rem);
   }
 
 &-opacity {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
   transform: translateY(8rem);
-  width: 100%;
-}
+  }
 }
 
 @media screen and (min-width: 900px) {

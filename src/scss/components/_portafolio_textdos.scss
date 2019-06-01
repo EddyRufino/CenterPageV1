@@ -1,11 +1,10 @@
 .container_textdos_portafolio {
   height: 640px;
-  background-color: #AFE7FE;
+  background-color: var(--bg-fondo-two);
   display: grid;
   grid-template-columns: 100%;
   justify-content: center;
-  justify-items: center;
-  background-color: #AFE7FE;
+  justify-items: center;  
 }
 
 .portafolio_textdos {
@@ -17,68 +16,80 @@
   width: 90%;
   height: 500px;
   padding-top: 12rem;
-  background-color: #AFE7FE;
+  background-color: var(--bg-fondo-two);
   
 
   &-one {
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
 
   &-two {
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
 
   &-three {
-    line-height: 1.2rem;
+    line-height: 1.4rem;
   }
 }
 
-.font {
-  font-family: sans-serif;
-  color: #5D5D5D;
-}
-
-
-
-@media (min-width: 320px) and (max-width: 359px) {
+@media (min-width: 320px) and (max-width: 334px) {
   .portafolio_textdos {
-    padding-top: 25rem;
+    padding-top: 21rem;
   }
 }
 
-@media (min-width: 360px) and (max-width: 374px) {
-  .portafolio_textdos {
-    padding-top: 23rem;
-  }
-}
-
-@media (min-width: 374px) and (max-width: 440px) {
-  .portafolio_textdos {
-    padding-top: 20rem;
-  }
-}
-
-@media (min-width: 440px) and (max-width: 454px) {
+@media (min-width: 335px) and (max-width: 359px) {
   .portafolio_textdos {
     padding-top: 19rem;
   }
 }
 
-@media (min-width: 454px) and (max-width: 480px) {
+
+@media (min-width: 360px) and (max-width: 379px) {
   .portafolio_textdos {
-    padding-top: 17rem;
+    padding-top: 18rem;
   }
 }
 
-@media (min-width: 480px) and (max-width: 640px) {
+@media (min-width: 380px) and (max-width: 453px) {
+  .portafolio_textdos {
+    padding-top: 19rem;
+  }
+}
+
+// @media (min-width: 454px) and (max-width: 454px) {
+//   .portafolio_textdos {
+//     padding-top: 18rem;
+//   }
+// }
+
+@media (min-width: 454px) and (max-width: 480px) {
+  .portafolio_textdos {
+    padding-top: 16rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 606px) {
   .portafolio_textdos {
     padding-top: 14rem;
   }
 }
 
-@media (min-width: 880px) {
+@media (min-width: 607px) and (max-width: 638px) {
   .portafolio_textdos {
-    padding-top: 10rem;
+    padding-top: 14rem;
+  }
+}
+
+@media (min-width: 639px) and (min-width: 886px) {
+  .portafolio_textdos {
+    padding-top: 14rem;
+  }
+}
+
+@media (min-width: 887px) {
+  .portafolio_textdos {
+    padding-top: 12rem;
   }
 }
 
@@ -94,21 +105,63 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 454px) {
+@media (min-width: 320px) and (max-width: 334px) {
   .container_textdos_portafolio {
-    height: 780px;
+    height: 840px;
   }
 }
 
-@media (min-width: 454px) and (max-width: 662px) {
+@media (min-width: 335px) and (max-width: 359px) {
+  .container_textdos_portafolio {
+    height: 820px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 453px) {
+  .container_textdos_portafolio {
+    height: 800px;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 479px) {
+  .container_textdos_portafolio {
+    height: 760px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 485px) {
+  .container_textdos_portafolio {
+    height: 740px;
+  }
+}
+
+@media (min-width: 486px) and (max-width: 598px) {
+  .container_textdos_portafolio {
+    height: 720px;
+  }
+}
+
+@media (min-width: 599px) and (max-width: 638px) {
   .container_textdos_portafolio {
     height: 700px;
   }
 }
 
+@media (min-width: 639px) and (max-width: 1023px) {
+  .container_textdos_portafolio {
+    height: 680px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container_textdos_portafolio {
+    height: 670px;
+  }
+}
+
 @media (min-width: 462px) and (max-width: 800px) {
   .container_textdos {
-    height: 650px;
+    //height: 650px;
   }
 }
 
@@ -122,7 +175,7 @@
 
 @media (min-width: 540px) and (max-width: 800px) {
   .container_textdos {
-    margin-top: 12rem;
+    margin-top: 14rem;//edite para diseño
   }
 }
 

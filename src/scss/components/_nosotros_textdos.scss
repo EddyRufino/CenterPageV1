@@ -1,8 +1,19 @@
 .nosotros_r {
-  background-color: aquamarine;
+  background-color: var(--bg-fondo-two);
   display: block;
-  margin-top: -1.5rem;
-  height: 800px;
+  //height: 780px;
+
+  @media (min-width: 320px) and (max-width: 418px) {
+    margin-top: -12rem;
+  }
+
+  @media (min-width: 419px) and (max-width: 515px) {
+    margin-top: -11rem;
+  }
+
+  @media (min-width: 516px) and (max-width: 905px) {
+    margin-top: -8rem;
+  }
 }
 
 .text_nosotros {
@@ -60,11 +71,11 @@
     height: 250px;
     //padding-top: 13rem;
     line-height: 1.5rem;
-    font-size: 1rem;
-    color: #3E3B3B;
+    font-size: var(--font-size-parrafo);
+    color: var(--bg-color-parrafo);
 
     &-two {
-      color: #3E3B3B;
+      color: var(--bg-color-parrafo);
     }
 
     @media screen and (max-width: 1024px) {
@@ -74,63 +85,140 @@
   }
 }
 
-.btn {
-  position: relative;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 3vh;
-  background-color: #1966FF;
-  padding: .9rem;
-  border-radius: 50px;
-  color: #FFF;
-
-  &:hover {
-    background-color: #1966FF;
-    padding: 1.1rem;
-    border-radius: 50px;
-    font-size: 3.1vh;
-    transition: .5s;
-  }
-}
-
-// @media (max-width: 340px) and (max-width: 667px) {
-//   .text_nosotros-parrafo {
-//     top: 13rem;
-//   }
-// }
-
-// @media (min-width: 340px) and (max-width: 585px) {
-//   .text-parrafo {
-//     top: 5rem;
-//   }
-// }
-
-// @media (max-width: 340px) and (max-height: 667px) {
-//   .text-parrafo {
-//     top: 0;
-//   }
-// }
-
-// @media (max-width: 585px) and (max-height: 667px) {
-//   .text-parrafo {
-//     top: 3rem;
-//   }
-// }
-
-@media (min-width: 320px) and (max-width: 415px) {
+@media (min-width: 320px) and (max-width: 365px) {
   .text_nosotros {
-    top: 13rem;
+    top: 10rem;
   }
 }
 
-@media (min-width: 415px) and (max-width: 1024px) {
+@media (min-width: 366px) and (max-width: 418px) {
   .text_nosotros {
-    top: 18rem;
+    top: 11rem;
   }
 }
-// @media (max-width: 800px){
-//   .text_nosotros {
-//     top: 16rem;
-//   }
-// }
 
+@media (min-width: 419px) and (max-width: 800px) {
+  .text_nosotros {
+    top: 17rem;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 905px) {
+  .text_nosotros {
+    top: 19rem;
+  }
+}
+
+@media (min-width: 906px) and (max-width: 1024px) {
+  .text_nosotros {
+    top: 15rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 332px) {
+  .nosotros_r {
+    height: 780px;
+  }
+}
+
+@media (min-width: 333px) and (max-width: 353px) {
+  .nosotros_r {
+    height: 760px;
+  }
+}
+
+@media (min-width: 354px) and (max-width: 389px) {
+  .nosotros_r {
+    height: 740px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 418px) {
+  .nosotros_r {
+    height: 720px;
+  }
+}
+
+@media (min-width: 419px) and (max-width: 461px) {
+  .nosotros_r {
+    height: 810px;
+  }
+}
+
+@media (min-width: 462px) and (max-width: 557px) {
+  .nosotros_r {
+    height: 770px;
+  }
+}
+
+@media (min-width: 558px) and (max-width: 640px) {
+  .nosotros_r {
+    height: 750px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 800px) {
+  .nosotros_r {
+    height: 770px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 706px) {
+  .nosotros_r {
+    height: 770px;
+  }
+}
+
+@media (min-width: 707px) and (max-width: 800px) {
+  .nosotros_r {
+    height: 750px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 844px) {
+  .nosotros_r {
+    height: 770px;
+  }
+}
+
+@media (min-width: 845px) and (max-width: 905px) {
+  .nosotros_r {
+    height: 750px;
+  }
+}
+
+@media (min-width: 906px) and (max-width: 958px) {
+  .nosotros_r {
+    height: 690px;
+  }
+}
+
+@media (min-width: 959px) and (max-width: 1024px) {
+  .nosotros_r {
+    height: 680px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1028px) {
+  .nosotros_r {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1029px) and (max-width: 1116px) {
+  .nosotros_r {
+    height: 980px;
+  }
+}
+
+@media (min-width: 1117px) and (max-width: 1156px) {
+  .nosotros_r {
+    height: 920px;
+  }
+}
+
+@media (min-width: 1157px) {
+  .nosotros_r {
+    height: 900px;
+  }
+}

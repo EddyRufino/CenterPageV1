@@ -1,8 +1,8 @@
-mixin portafolio_text(text)
+mixin portafolio_text(images, text)
   article.text_portafolio
     div.text_portafolio-img
-      span.text_portafolio-img-svg
-    span.text_portafolio-parrafo.font= text
+      i.text_portafolio-img-i(style=`background-image: url(${images});`)
+    span.text_portafolio-parrafo.texto= text
       br
       br
       a(href="").btn Contactanos

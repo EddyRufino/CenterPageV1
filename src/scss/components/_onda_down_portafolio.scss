@@ -31,31 +31,30 @@
   }
 
   &-title {
-    display: block;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: rgba(25, 102, 255, .6);
-    transform: translateY(3.5rem);
+
+    @media (min-width: 320px) and (max-width: 374px) {
+      transform: translateY(5rem);
+    }
+
+    @media (min-width: 374px) and (max-width: 530px) {
+      transform: translateY(6rem);
+    }
+
+    @media (min-width: 531px) and (max-width: 638px) {
+      transform: translateY(7rem);
+    }
+
+    @media (min-width: 639px)  {
+      transform: translateY(8rem);
+    }
   }
 
   &-subtitle {
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    color: rgba(25, 102, 255, .9);    
     transform: translateY(2.5rem);
   }
 
 &-opacity {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  text-align: center;
   transform: translateY(8rem);
-  width: 100%;
 }
 }
 

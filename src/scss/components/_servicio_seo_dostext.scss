@@ -46,9 +46,15 @@
   }
 }
 
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .container_dostext_seo {
     height: 280px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .container_dostext_seo {
+    height: 100px;
   }
 }
 

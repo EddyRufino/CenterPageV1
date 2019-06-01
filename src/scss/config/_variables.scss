@@ -15,6 +15,20 @@ $font-family: 'sans-serif';
   --bg-fondo-one: #ffffff;
   --bg-fondo-two :#afe7fe;
   --bg-color-parrafo: #3E3B3B;
+
+  --bg-color: var(--main-color);
+  --bg-modal-color: var(--main-modal-color);
+  --bg-alternate-color: #999;
+  --bg-alternate-modal-color: rgba(153, 153, 153, .75);
+  --border-color: #DDD;
+  --alternate-color: #39B54A;
+
+  --main-color: #FFF;
+  --main-modal-color: rgb(255, 255, 255, .75);
+  --second-color: #000;
+  --second-modal-color: rgba(0, 0, 0, .75);
+  --alternate-color: tomato;
+  --alternate-modal-color: rgb(57, 181, 74, .75);
 }
 
 /** Size letras **/
