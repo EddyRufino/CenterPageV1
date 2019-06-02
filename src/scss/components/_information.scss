@@ -1,5 +1,5 @@
 $header-container-width: 1200px;
-$header-height: 0rem;
+$header-height: 2rem;
 
 .fab {
 
@@ -60,11 +60,7 @@ $header-height: 0rem;
   justify-content: space-around;
   justify-items: center;
   background-color: #1966FF;
-  padding: 5px;
-  font: {
-    weight: bold;
-    size: 1rem;
-  }
+  padding: 6.5px;
 
   // &-left {
   //   padding-left: 10px;
