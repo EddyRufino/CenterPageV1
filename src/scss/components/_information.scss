@@ -1,12 +1,55 @@
 $header-container-width: 1200px;
-$header-height: 2rem;
+$header-height: 0rem;
+
+.fab {
+
+}
+
+.fa {
+  &-whatsapp {
+     &:hover {
+       color: green;
+     }
+  }
+
+  &-facebook-square {
+   &:hover {
+     color: blue;
+   }
+  }
+
+  &-youtube {
+     &:hover {
+       color: red;
+     }
+  }
+
+  &-github {
+     &:hover {
+       color: black;
+     }
+  }
+
+  &-linkedin {
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+
+.icons {
+  text-decoration: none;
+  list-style: none;
+  
+}
 
 .info {
   position: fixed;
   width: 100%;
   height: $header-height;
   background-color: #1966FF;
-  z-index: 999;
+  z-index: 998;
 }
 
 .info-content {
@@ -14,7 +57,8 @@ $header-height: 2rem;
   max-width: $header-container-width;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+  justify-items: center;
   background-color: #1966FF;
   padding: 5px;
   font: {
@@ -22,20 +66,20 @@ $header-height: 2rem;
     size: 1rem;
   }
 
-  &-left {
-    padding-left: 10px;
+  // &-left {
+  //   padding-left: 10px;
 
-    &-gmail {
-      color: #FFFFFF;
-      font-size: 1rem;
-    }
+  //   &-gmail {
+  //     color: #FFFFFF;
+  //     font-size: 1rem;
+  //   }
   }
 
-  &-right {
-    padding-right: 10px;
+  // &-right {
+  //   padding-right: 10px;
     
-    &-phone {
-      color: #FFFFFF;
-    }
-  }
-}
+  //   &-phone {
+  //     color: #FFFFFF;
+  //   }
+  // }
+// }

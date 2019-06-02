@@ -22,12 +22,14 @@
 
   @media (min-width: 320px) and (max-width: 640px) {
     position: relative;
-    padding-top: 1rem;
+    padding-top: 5rem;
+    height: 270px;
   }
 
   @media (min-width: 641px) and (max-width: 800px) {
     position: relative;
-    padding-top: 2rem;
+    padding-top: 5rem;
+    height: 270px;
   }
 
   &-img {
@@ -136,4 +138,6 @@ form.Form {
   display: block;
   text-align: center;
   width: 290px;
+  z-index: 991;
 }
+

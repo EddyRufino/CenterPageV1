@@ -1,4 +1,4 @@
-.onda_down_footer_portafolio-container {
+.onda_down_footer_contacto-container {
   transform: translateY(-3rem);
   z-index: 992;
 
@@ -48,31 +48,31 @@
 }
 
 @media (min-width: 800px) and (max-width: 1025px) {
-  .onda_down_footer_portafolio-container {
+  .onda_down_footer_contacto-container {
     transform: translateY(-11rem);
   }
 }
 
 @media (min-width: 320px) and (max-width: 393px) {
-  .onda_down_footer_portafolio-container {
+  .onda_down_footer_contacto-container {
     transform: translateY(11rem);
   }
 }
 
 @media (min-width: 394px) and (max-width: 460px) {
-  .onda_down_footer_portafolio-container {
-    transform: translateY(10rem);// La cambie cuando cambie el footer
+  .onda_down_footer_contacto-container {
+    transform: translateY(10rem); // La cambie cuando cambie el footer
   }
 }
 
 @media (min-width: 461px) and (max-width: 640px) {
-  .onda_down_footer_portafolio-container {
+  .onda_down_footer_contacto-container {
     transform: translateY(9rem);// La cambie cuando cambie el footer
   }
 }
 
 @media (min-width: 641px) and (max-width: 800px) {
-  .onda_down_footer_portafolio-container {
-    transform: translateY(9rem); // La cambie cuando cambie el footer
+  .onda_down_footer_contacto-container {
+    transform: translateY(9rem);// La cambie cuando cambie el footer
   }
 }

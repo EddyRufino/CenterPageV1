@@ -79,11 +79,15 @@
 
     &-movil {
       position: relative;
+      display: inline-block;
+      width: 150px;
       left: -5px;
     }
 
     &-tablet {
       position: relative;
+      display: inline-block;
+      width: 150px;
       left: 5px;
     }
 
