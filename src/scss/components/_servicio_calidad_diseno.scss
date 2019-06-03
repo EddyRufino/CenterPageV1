@@ -1,6 +1,7 @@
 .calidad-servicio_diseno {
   width: 100%;  
   background-color: var(--bg-fondo-one);
+  z-index: 993;
   
 
   @media (min-width: 320px) and (max-width: 460px) {
@@ -49,7 +50,7 @@
   @media screen and (max-width: 37.4em) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    //top: 15rem;
+    z-index: 991;
   }
 
   @media (min-width: 599px) and (max-width: 800px) {
@@ -62,6 +63,7 @@
 
   @media (min-width: 1024px) {
     top: 8rem;
+    z-index: 991;
   }
 
 
@@ -185,5 +187,6 @@
 @media (min-width: 598px) and (max-width: 800px) {
   .calidad-servicio_diseno-container {
     padding-top: 3rem;
+    z-index: 991;
   }
 }
