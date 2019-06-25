@@ -154,7 +154,7 @@ gulp.task('sitemap', () => {
     read: false
   })
     .pipe(sitemap({
-      siteUrl: 'https://example.com' // remplazar por tu dominio
+      siteUrl: 'https://centerpage.co' // remplazar por tu dominio
     }))
     .pipe(gulp.dest('./public'))
 })
